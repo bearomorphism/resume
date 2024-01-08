@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\RequirePackage{fontawesome}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item {\small
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#3} & #2 \\
+      \textit{\small#1} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeLink}[2]{\href{#1}{\underline{#2 \faExternalLink}}}
+\newcommand{\resumeSmallItem}[1]{\item {\small #1}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Yu-Ting Hsiung} & Email : \href{mailto:bear890707@gmail.com}{bear890707@gmail.com}\\
+  \href{https://github.com/bearomorphism}{\color{blue} GitHub} \; \href{https://leetcode.com/Mrbear666/}{\color{blue} LeetCode} \;
+  \href{https://www.linkedin.com/in/%E8%82%B2%E9%9C%86-%E7%86%8A-4622171b4/}{\color{blue} LinkedIn} \;
+  \href{https://bearomorphism.pages.dev/}{\color{blue} Blog}
+  & Mobile : (+886)-900-255-053 \\
+\end{tabular*}
+%-----------SUMMARY-----------------
+
+\section{Summary}
+Full-stack developer with a background in developing productivity tools at a startup. R\&D engineer and quant at a crypto quantitative fund company. Skilled educator with a passion for teaching and a track record of helping students succeed. Passionate about problem-solving and teamwork.
+
+%-----------EDUCATION-----------------
+\section{Education}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{National Taiwan University} & Taipei, Taiwan \\
+      \textit{\small B.S. of Computer Science and Information Engineering} & \textit{\small Aug. 2018--Jan. 2023} \\
+      \textit{\small B.S. of Mathematics (double major)} & \textit{\small Aug. 2019--June 2022} \\
+      \textit{\small Dean's List Award (top 5\%)} & \textit{\small Spring 2019}
+    \end{tabular*}\vspace{-5pt}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\resumeLink{https://www.synology.com/}{Synology}}{New Taipei, Taiwan}
+      {Software Developer}{July 2023--present}
+      \begin{itemize}
+        \resumeSmallItem{Revamping an application from ExtJS to Vue3 for enhanced performance and maintainability.}
+        \resumeSmallItem{Established and maintained documentation for coding standards. Introduced code linting scripts to enforce consistent coding styles, resulting in a more cohesive and readable codebase.}
+      \end{itemize}
+    \resumeSubheading
+      {A\&R Research Capital (Crypto Quantitative Fund)}{Taipei, Taiwan}
+      {Research \& Development Engineer, Quantitative Researcher}{Oct. 2022--June 2023}
+      \begin{itemize}
+        \resumeSmallItem{Identified key characteristics or variables for predicting future prices. Optimized future forecasting algorithms using machine learning techniques to improve portfolio performance.}
+      \end{itemize}
+    \resumeSubheading
+      {\resumeLink{https://www.tricuss.io/}{Tricuss (startup)}}{Taipei, Taiwan}
+      {Software Engineer, Co-founder}{Oct. 2021--July 2022}
+      \begin{itemize}
+          \resumeSmallItem{Designed a tool integrating message system and document collaboration to achieve ``efficient discussion" and ``knowledge management" in one application and increase user experience and productivity.}
+          \resumeSmallItem{Built a RESTful API service for integrating frontend and backend with \textbf{Node.js, Express, and MongoDB}.}
+          \resumeSmallItem{Applied \textbf{socket.io} to create a Discord- or Slack-like low-latency communication system, which includes a text message system, a real-time text channel state update system, and a markdown collaborative text editor.}
+          % \resumeSmallItem{Assembled the web app's frontend with \textbf{Next.js, Bootstrap 5}.}
+          % \resumeSmallItem{Utilized \textbf{Slate} to create a text input box for users to send messages and to type commands with query pill prompt.  }
+      \end{itemize}
+    \resumeSubheading
+        {\resumeLink{https://www.leju.com.tw/}{Leju Technology}}{Taipei, Taiwan}
+        {Backend Engineer Internship}{Feb. 2021--Sept. 2021}
+        \begin{itemize}
+            % \resumeSmallItem{Maintained Leju's web frontstage application and backstage system, mainly written in \textbf{PHP, Laravel 5}}.
+            \resumeSmallItem{Designed a Taiwan estate address normalization system. Organized 20M+ unstructured estate data with \textbf{MySQL} and \textbf{Pandas}.}
+            \resumeSmallItem{Designed a data processing and merging algorithm, speeding up \textbf{100+ times} faster.}
+        \end{itemize}
+
+    \resumeSubheading
+      {NTU CSIE, NTU Mathematics}{Taipei, Taiwan}
+      {Teaching Assistant}{Feb. 2020--June 2022}
+      \resumeItemListStart
+        \resumeItem{Data Structure and Algorithm (required course, 250+ students)}
+          % {TA hand-written homework Team Lead and managed 10+ TAs. Designed hand-written and programming assignments. Total 700+ students for 3 semesters.}
+          % {Led 10+ TAs to design homework. Scheduled homework timeline to reduce the pressure from students and instructors. Proposed programming homework, including stack and graph theory.}
+          {Led 10+ TAs to design homework.}
+        \resumeItem{Algorithm Design and Analysis (required course, 250+ students)}
+          {Designed weekly mini-homework and hand-written assignments, including time complexity analysis, asymptotic notation, and complexity classes.}
+        \item \textbf{\small Calculus (general mathematics)(required course, 40+ students)}.
+      \resumeItemListEnd
+    \resumeSubheading
+      {\resumeLink{https://sprout.tw/spt/}{NTU CSIE Sprout}}{Taipei, Taiwan}
+      {Lecturer, Academic Project Manager}{Nov. 2018--June 2022}
+        % \begin{itemize}
+        %     \resumeSmallItem{Taught 50+ high school students about \textbf{Python} and related tools, including Git, Numpy, Selenium, basic concepts of complexity analysis, and algorithms. Gave 5+ lectures (1.5 hours each) every year. Clarified students' thoughts to help them finish their homework after class.}
+        %     \resumeSmallItem{Managed 6 lecturers and enhanced lectures' quality. Reviewed the lecture slides and gave suggestions to the lecturer before class.}
+        % \end{itemize}
+
+    \resumeSubheading
+      {\resumeLink{https://apcs.camp/}{APCS Camp}}{Taipei, Taiwan}
+      {Teaching Assistant, C/C++ programming problem designer}{Summer 2021 and 2022}
+      % \begin{itemize}
+      %   \resumeSmallItem{Designed 20+ programming problems for 300+ students' exercises and assignments.}
+      %   \resumeSmallItem{Assisted students in understanding the concept of programming, including basic concepts and advanced algorithms.}
+      % \end{itemize}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item
+     \textbf{Languages}{: C, C++, Python, Javascript, Typescript, SQL, Java, PHP}
+   \item
+     \textbf{Technologies}{: Vue, React, Node.js, socket.io, Linux, Git, \LaTeX, Pandas, Machine Learning, NumPy, Laravel}
+ \resumeSubHeadingListEnd
+
+%--------RELEVANT COURSES----------
+% \section{Relevant courses}
+% \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}l}
+% Discrete Mathematics & A+ & Linear Algebra (I) & A  \\
+% Introduction to Computer Programming & A+ & Linear Algebra (II) & A- \\
+% Data Structures and Algorithms & A+ & Optimization Algorithms & A+ \\
+% Algorithm Design and Analysis & A+ & Prediction, Learning, and Games & A \\
+% Game Theory & A+ &  Machine Learning & A
+% \end{tabular*}
+%--------CLUB EXPERIENCES-------------
+% \section{School Club Experience}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading{NTU Cycling Club}{Taipei, Taiwan}{President}{Feb 2019 - Jan 2022}
+%     \begin{itemize}
+%         \item Organized events and managed committee members, and \textbf{recruited 50+ new members}.
+%         \item Organized a \textbf{5-day trip} in eastern Taiwan (20+ participants) in Winter 2021.
+%     \end{itemize}
+%   \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
